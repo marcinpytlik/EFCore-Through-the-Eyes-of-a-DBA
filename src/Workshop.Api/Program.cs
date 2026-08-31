@@ -22,7 +22,9 @@ app.UseSwaggerUI();
 app.MapGet("/", () => Results.Ok(new
 {
     workshop = "EF Core Through the Eyes of a DBA",
-    database = "EfCoreDbaLab"
+    database = "EfCoreDbaLab",
+    swagger = "/swagger",
+    hotCustomerId = 123
 }));
 
 app.MapWorkshop1Endpoints();

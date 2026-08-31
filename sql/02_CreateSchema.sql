@@ -18,6 +18,10 @@ CREATE TABLE dbo.Customers
 );
 GO
 
+CREATE INDEX IX_Customers_Name
+ON dbo.Customers(Name);
+GO
+
 CREATE TABLE dbo.Orders
 (
     OrderId        int IDENTITY(1,1) NOT NULL
@@ -48,6 +52,9 @@ CREATE TABLE dbo.OrderLines
 GO
 
 /*
+Workshop 2 baseline index:
+- Customers(Name) exists so LAB06 can demonstrate non-SARGable Index Scan vs SARGable Index Seek.
+
 Intentionally missing indexes:
 - Orders(CustomerId)
 - OrderLines(OrderId)

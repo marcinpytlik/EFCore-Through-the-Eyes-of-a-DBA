@@ -28,6 +28,20 @@ public static class Workshop2Endpoints
                 })
                 .ToListAsync());
 
+        // Non-SARGable: function on the indexed column (LAB06).
+        group.MapGet("/customers/search-bad/{name}", async (string name, LabDbContext db) =>
+            await db.Customers
+                .Where(c => c.Name.ToUpper() == name.ToUpper())
+                .Take(20)
+                .ToListAsync());
+
+        // SARGable: equality on the column (LAB06).
+        group.MapGet("/customers/search-good/{name}", async (string name, LabDbContext db) =>
+            await db.Customers
+                .Where(c => c.Name == name)
+                .Take(20)
+                .ToListAsync());
+
         return app;
     }
 }

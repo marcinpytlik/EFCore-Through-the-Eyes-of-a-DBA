@@ -1,0 +1,61 @@
+@baseUrl = http://localhost:5000
+
+# Canonical requests — same URLs as docs/{pl,en,de}/labs/ and the HTML deck.
+# Hot customer used in workshops 2–4: CustomerId 123 / name "Customer 123".
+
+### Health
+GET {{baseUrl}}/
+
+### LAB01 — From HTTP Request to SQL Server
+GET {{baseUrl}}/workshop1/customers-bad
+
+### LAB03 — projection (use after measuring customers-bad)
+GET {{baseUrl}}/workshop1/customers-good
+
+### LAB02 — deferred execution (composition only)
+GET {{baseUrl}}/workshop1/deferred/City%201
+
+### LAB02 — extra predicate before materialization
+GET {{baseUrl}}/workshop1/deferred/City%201?minId=1000
+
+### LAB04 / LAB05 — missing index, then covering index
+GET {{baseUrl}}/workshop2/orders/customer/123
+
+### LAB05 — covering-friendly projection
+GET {{baseUrl}}/workshop2/orders/customer/123/projection
+
+### LAB06 — non-SARGable search
+GET {{baseUrl}}/workshop2/customers/search-bad/Customer%20123
+
+### LAB06 — SARGable search
+GET {{baseUrl}}/workshop2/customers/search-good/Customer%20123
+
+### LAB07 — blocking holder (30s transaction)
+POST {{baseUrl}}/workshop3/blocking/1
+
+### LAB07 — blocked updater (run while blocking is in flight)
+POST {{baseUrl}}/workshop3/update/1?status=Completed
+
+### LAB08 — hold uncommitted update (30s then rollback)
+POST {{baseUrl}}/workshop3/isolation/hold/10
+
+### LAB08 — READ COMMITTED (run while hold is in flight)
+GET {{baseUrl}}/workshop3/isolation/read-committed/10
+
+### LAB08 — READ UNCOMMITTED (run while hold is in flight)
+GET {{baseUrl}}/workshop3/isolation/read-uncommitted/10
+
+### LAB09 — deadlock session A (Customers then Orders)
+POST {{baseUrl}}/workshop3/deadlock/session-a?customerId=1&orderId=1
+
+### LAB09 — deadlock session B (Orders then Customers) — start together with A
+POST {{baseUrl}}/workshop3/deadlock/session-b?customerId=1&orderId=1
+
+### LAB11 — incident (hot customer over-fetch)
+GET {{baseUrl}}/workshop4/customer/123/orders-bad
+
+### LAB10 / LAB11 — N+1 (50 extra round-trips)
+GET {{baseUrl}}/workshop4/customer/123/orders-nplus1
+
+### LAB11 — improved projection (hidden from Swagger; use after diagnosis)
+GET {{baseUrl}}/workshop4/customer/123/orders-good

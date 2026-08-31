@@ -30,6 +30,7 @@ ORDER BY request_session_id;
 GO
 
 -- Query Store: recent resource consumers
+-- Capture mode is ALL with a 1-minute interval so lab queries appear quickly.
 SELECT TOP (20)
     q.query_id,
     qt.query_sql_text,
