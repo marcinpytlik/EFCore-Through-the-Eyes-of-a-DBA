@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#fff"/>
+<rect x="80" y="80" width="1440" height="740" rx="24" fill="#f8fafc" stroke="#d6dee8" stroke-width="4"/>
+<style>.code{font-family:Consolas,Menlo,monospace;font-size:52px;fill:#1f2937}.kw{fill:#1768c4;font-weight:700}.param{fill:#a21caf;font-weight:700}</style>
+<text class="code kw" x="150" y="175">FROM</text>
+<text class="code" x="150" y="245">(</text>
+<text class="code" x="270" y="325"><tspan class="kw">SELECT TOP</tspan><tspan> (</tspan><tspan class="param">@p</tspan><tspan>)</tspan></text>
+<text class="code" x="380" y="395">...</text>
+<text class="code" x="270" y="475"><tspan class="kw">FROM</tspan><tspan> Customers </tspan><tspan class="kw">AS</tspan><tspan> c</tspan></text>
+<text class="code" x="270" y="555"><tspan class="kw">ORDER BY</tspan><tspan> c.CustomerId</tspan></text>
+<text class="code" x="150" y="635"><tspan>) </tspan><tspan class="kw">AS</tspan><tspan> c0</tspan></text>
+<text class="code" x="150" y="715"><tspan class="kw">LEFT JOIN</tspan><tspan> Orders </tspan><tspan class="kw">AS</tspan><tspan> o</tspan></text>
+<text class="code" x="270" y="795"><tspan class="kw">ON</tspan><tspan> c0.CustomerId = o.CustomerId</tspan></text>
+</svg>
