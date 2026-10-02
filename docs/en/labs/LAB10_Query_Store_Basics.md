@@ -30,8 +30,8 @@ Learn to find application queries in Query Store and connect them to a specific 
 - which rows belong to the wide graph vs N+1,
 - which rows may belong to earlier workload.
 
-## Expected result
-You can move from “the application is slow” to a concrete SQL statement, execution count, and measurable Query Store evidence.
+## Reflection checkpoint
+Pick one Query Store entry and explain how its SQL shape, execution count and resource metrics connect it to a specific application workload.
 
 ## Exit criterion
 You can identify the workload without relying on a fixed `query_id`.
