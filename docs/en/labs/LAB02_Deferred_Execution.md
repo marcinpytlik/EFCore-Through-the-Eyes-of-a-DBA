@@ -27,8 +27,8 @@ See the difference between composing a LINQ query and materializing it — **wit
 - materialization method,
 - whether the extra predicate is in the same round-trip.
 
-## Expected result
-`Where()` composes the expression tree; execution happens at materialization. A predicate added before materialization becomes part of the same SQL statement.
+## Reflection checkpoint
+Using the two generated SQL statements, explain in your own words the difference between **query composition** and **query execution**.
 
 ## Exit criterion
 You can explain query composition vs execution and prove it with the two generated SQL statements.
