@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+ <rect width="1600" height="900" fill="#ffffff"/>
+ <style>
+   text{font-family:Arial,Helvetica,sans-serif;fill:#0b1933}
+   .title{font-size:56px;font-weight:700;text-anchor:middle}
+   .body{font-size:44px;font-weight:700;text-anchor:middle}
+   .code{font-family:Consolas,Menlo,monospace;font-size:42px;fill:#1e293b}
+   .kw{fill:#1565c0;font-weight:700}
+   .arrow{stroke:#4b5563;stroke-width:16;fill:none;marker-end:url(#a)}
+ </style>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4b5563"/></marker></defs>
+ 
+<g>
+<rect x="400" y="45" width="800" height="120" rx="26" fill="#dbeeff" stroke="#3ba4e8" stroke-width="6"/><text class="title" x="800" y="122">HTTP Request</text>
+<path class="arrow" d="M800 165 L800 220"/>
+<rect x="400" y="235" width="800" height="120" rx="26" fill="#dff7df" stroke="#43be72" stroke-width="6"/><text class="title" x="800" y="312">ASP.NET Core</text>
+<path class="arrow" d="M800 355 L800 410"/>
+<rect x="400" y="425" width="800" height="120" rx="26" fill="#fff1c9" stroke="#f0b525" stroke-width="6"/><text class="title" x="800" y="502">Entity Framework Core</text>
+<path class="arrow" d="M800 545 L800 600"/>
+<rect x="400" y="615" width="800" height="120" rx="26" fill="#eadcff" stroke="#8454df" stroke-width="6"/><text class="title" x="800" y="692">Generated SQL</text>
+<path class="arrow" d="M800 735 L800 790"/>
+<rect x="400" y="795" width="800" height="90" rx="26" fill="#ffdfe1" stroke="#f05a62" stroke-width="6"/><text class="title" x="800" y="858">SQL Server</text>
+</g>
+ </svg>
