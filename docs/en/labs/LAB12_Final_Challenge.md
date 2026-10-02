@@ -4,7 +4,7 @@
 Bring together every element of the workshop in one evidence-based diagnosis.
 
 ## Time
-20 min in the 8-hour agenda. The instructor may extend it if the group works faster.
+Use the time allocated by the instructor. This is the final evidence-based challenge for the 3-day track.
 
 ## Before you start
 - LAB01–LAB11 should be complete or at least discussed.
@@ -46,7 +46,7 @@ You can present a short diagnosis in which every recommendation has evidence, an
 ## Final question
 **What really reaches SQL Server?**
 
-Expected meaning: SQL Server sees the SQL, parameters, execution pattern, and transactional behaviour produced by the application — not the intent written in C#.
+Write your own one-sentence answer and support it with at least two pieces of evidence collected during the course.
 
 ## Worksheet
 Fill [../worksheets/LAB12_WORKSHEET.md](../worksheets/LAB12_WORKSHEET.md).
