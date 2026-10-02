@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+ <rect width="1600" height="900" fill="#ffffff"/>
+ <style>
+   text{font-family:Arial,Helvetica,sans-serif;fill:#0b1933}
+   .title{font-size:56px;font-weight:700;text-anchor:middle}
+   .body{font-size:44px;font-weight:700;text-anchor:middle}
+   .code{font-family:Consolas,Menlo,monospace;font-size:42px;fill:#1e293b}
+   .kw{fill:#1565c0;font-weight:700}
+   .arrow{stroke:#4b5563;stroke-width:16;fill:none;marker-end:url(#a)}
+ </style>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4b5563"/></marker></defs>
+ 
+<rect x="180" y="100" width="1240" height="180" rx="30" fill="#dbeeff" stroke="#4a9be4" stroke-width="6"/><text class="title" x="800" y="210">SQL Server work</text>
+<rect x="180" y="360" width="1240" height="180" rx="30" fill="#fff1c9" stroke="#eab12a" stroke-width="6"/><text class="title" x="800" y="470">Network payload</text>
+<rect x="180" y="620" width="1240" height="180" rx="30" fill="#dff7df" stroke="#43b66c" stroke-width="6"/><text class="title" x="800" y="730">Application materialization</text>
+ </svg>
