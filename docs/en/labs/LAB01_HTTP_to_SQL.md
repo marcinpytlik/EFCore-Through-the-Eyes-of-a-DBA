@@ -30,8 +30,8 @@ Leave `customers-good` for LAB03 unless the instructor says otherwise.
 - materialization method,
 - a short answer: what actually reaches SQL Server?
 
-## Expected result
-SQL Server does not see C# or LINQ. It sees the final SQL, parameters, and transactional behaviour produced by the application.
+## Reflection checkpoint
+Write your own one-sentence answer to: **What actually reaches SQL Server from this request?**
 
 ## Exit criterion
 You can connect one HTTP request to its generated SQL and point to the place in code where the query is executed.
