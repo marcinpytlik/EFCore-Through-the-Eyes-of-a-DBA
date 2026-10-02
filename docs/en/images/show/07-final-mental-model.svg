@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+ <rect width="1600" height="900" fill="#ffffff"/>
+ <style>
+   text{font-family:Arial,Helvetica,sans-serif;fill:#0b1933}
+   .title{font-size:56px;font-weight:700;text-anchor:middle}
+   .body{font-size:44px;font-weight:700;text-anchor:middle}
+   .code{font-family:Consolas,Menlo,monospace;font-size:42px;fill:#1e293b}
+   .kw{fill:#1565c0;font-weight:700}
+   .arrow{stroke:#4b5563;stroke-width:16;fill:none;marker-end:url(#a)}
+ </style>
+ <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4b5563"/></marker></defs>
+ 
+<rect x="350" y="25" width="900" height="120" rx="28" fill="#cfe6ff"/><text class="title" x="800" y="102">Application decision</text>
+<path class="arrow" d="M800 145 L800 200"/>
+<rect x="350" y="215" width="900" height="120" rx="28" fill="#dcf6cf"/><text class="title" x="800" y="292">Generated SQL workload</text>
+<path class="arrow" d="M800 335 L800 390"/>
+<rect x="350" y="405" width="900" height="120" rx="28" fill="#ffe6a8"/><text class="title" x="800" y="482">Execution plan / locks / waits</text>
+<path class="arrow" d="M800 525 L800 580"/>
+<rect x="350" y="595" width="900" height="120" rx="28" fill="#ffc397"/><text class="title" x="800" y="672">Database cost</text>
+<path class="arrow" d="M800 715 L800 770"/>
+<rect x="350" y="785" width="900" height="100" rx="28" fill="#d9c7ff"/><text class="title" x="800" y="854">API behaviour</text>
+ </svg>
