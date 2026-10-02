@@ -29,8 +29,8 @@ This lab does not depend on hot customer 123 — the endpoint takes the first 10
 - HTTP payload size,
 - which fields the API client actually needs.
 
-## Expected result
-Projection reduces transferred data and materialization cost even when SQL Server I/O does not fall proportionally.
+## Reflection checkpoint
+Based on your measurements, explain what changed in **SQL shape, payload, materialization work and logical reads**. Do not assume all metrics must improve by the same percentage.
 
 ## Exit criterion
 You can show what was removed from the data shape and prove the difference with at least two kinds of evidence: SQL/plan/I/O and payload.
