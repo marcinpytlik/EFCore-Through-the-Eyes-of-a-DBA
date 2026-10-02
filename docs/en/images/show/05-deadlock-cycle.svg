@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#fff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#0b1933}.h{font-size:46px;font-weight:700;text-anchor:middle}.b{font-size:38px;font-weight:700;text-anchor:middle}.s{font-size:30px;font-weight:700;text-anchor:middle}</style>
+<defs><marker id="red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#dc3f50"/></marker><marker id="blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#1876d2"/></marker></defs>
+<rect x="80" y="70" width="610" height="560" rx="28" fill="#eef7ff" stroke="#79b6ea" stroke-width="5"/><text class="h" x="385" y="135">Session A:</text><text class="b" x="385" y="190">Customers → Orders</text>
+<rect x="150" y="245" width="470" height="130" rx="24" fill="#dcf6df" stroke="#52b66f" stroke-width="4"/><text class="b" x="385" y="305">🔒 Customers</text><text class="s" x="385" y="350" fill="#15803d">(held by A)</text>
+<rect x="150" y="455" width="470" height="130" rx="24" fill="#ffe1e3" stroke="#ef6a70" stroke-width="4"/><text class="b" x="385" y="515">🔒 Orders</text><text class="s" x="385" y="560" fill="#d93b50">(waiting for B)</text>
+<path d="M385 375 L385 445" stroke="#2563a6" stroke-width="8"/>
+<rect x="910" y="70" width="610" height="560" rx="28" fill="#fff8e8" stroke="#e9bd61" stroke-width="5"/><text class="h" x="1215" y="135">Session B:</text><text class="b" x="1215" y="190">Orders → Customers</text>
+<rect x="980" y="245" width="470" height="130" rx="24" fill="#dcf6df" stroke="#52b66f" stroke-width="4"/><text class="b" x="1215" y="305">🔒 Orders</text><text class="s" x="1215" y="350" fill="#15803d">(held by B)</text>
+<rect x="980" y="455" width="470" height="130" rx="24" fill="#ffe1e3" stroke="#ef6a70" stroke-width="4"/><text class="b" x="1215" y="515">🔒 Customers</text><text class="s" x="1215" y="560" fill="#d93b50">(waiting for A)</text>
+<path d="M1215 375 L1215 445" stroke="#2563a6" stroke-width="8"/>
+<path d="M650 220 C800 100 900 100 970 220" fill="none" stroke="#dc3f50" stroke-width="18" marker-end="url(#red)"/>
+<path d="M970 570 C900 700 760 700 650 570" fill="none" stroke="#1876d2" stroke-width="18" marker-end="url(#blue)"/>
+<rect x="80" y="680" width="700" height="150" rx="28" fill="#eef7ff" stroke="#bddaf4" stroke-width="4"/><text class="b" x="430" y="745">A holds Customers,</text><text class="b" x="430" y="795">waits for Orders</text>
+<rect x="820" y="680" width="700" height="150" rx="28" fill="#fff8e8" stroke="#f0d49a" stroke-width="4"/><text class="b" x="1170" y="745">B holds Orders,</text><text class="b" x="1170" y="795">waits for Customers</text>
+</svg>
